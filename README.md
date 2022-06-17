@@ -29,7 +29,7 @@ TAP主体采用[微核架构](http://www.ruanyifeng.com/blog/2016/09/software-ar
 同时`HTTP`响应服务支持了字符串类型的`HttpResponse`、经由`sendfile()`优化过的`FileResponse`、自主开发的`JsonResponse`。充分考虑多种常见实际业务情况。
 
 ## Reactor模型的单进程多线程服务 ##
-本项目在启动初期就把超好用的并发服务的作为重要目标之一。为此移植了简洁好用的`Thread Pool`，同时使用了`RAII`风格的`std::unique_lock`/`std::shared_lock`操作`std::shared_mutex`等锁。整体高效使用。
+本项目在启动初期就把超好用的并发服务的作为重要目标之一。为此移植了简洁好用的`Thread Pool`，同时使用了`RAII`风格的`std::unique_lock`/`std::shared_lock`操作`std::shared_mutex`等锁。整体高效可食用。
 
 
 ## 未来提升的方向 ##
@@ -38,7 +38,8 @@ TAP主体采用[微核架构](http://www.ruanyifeng.com/blog/2016/09/software-ar
 3. `Linux`下自有网络协议栈
 4. `WebSocket` 和 `HTTP/2` 的支持
 5. 协程方向的优化
-6. ~~BUG FREE~~
+6. 完成日志库的开发
+7. ~~BUG FREE~~
 
 
 
