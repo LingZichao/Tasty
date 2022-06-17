@@ -37,7 +37,8 @@ TAP主体采用[微核架构](http://www.ruanyifeng.com/blog/2016/09/software-ar
 2. 分布式支持
 3. `Linux`下自有网络协议栈
 4. `WebSocket` 和 `HTTP/2` 的支持
-5. ~~BUG FREE~~
+5. 协程方向的优化
+6. ~~BUG FREE~~
 
 
 
